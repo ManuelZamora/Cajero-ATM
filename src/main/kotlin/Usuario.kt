@@ -1,14 +1,18 @@
 class Usuario {
 
+
     var user = ""
     var nip = 0
+
+    constructor(user: String, nip: Int){
+        this.user = user
+        this.nip = nip
+    }
 
     fun createUser(){
         /**
          * Declaración de variables
          */
-        var userName = this.user
-        var userNip = this.nip
 
         print("!Eres nuevo :), creemos una cuenta¡\n")
         print("Inserte su usuario \n")
@@ -16,10 +20,5 @@ class Usuario {
         print("Ingrese su NIP \n")
         this.nip = readLine()!!.toInt()
     }
-
-    fun showUser(){
-        print("Su usuario $user \n su NIP $nip \n")
-    }
-
 
 }
