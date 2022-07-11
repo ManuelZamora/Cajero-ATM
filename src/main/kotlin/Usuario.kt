@@ -1,13 +1,4 @@
-class Usuario {
-
-
-    var user = ""
-    var nip = 0
-
-    constructor(user: String, nip: Int){
-        this.user = user
-        this.nip = nip
-    }
+class Usuario(var user: String, var nip: Int, var saldo: Int) {
 
     fun createUser(){
         /**
@@ -19,6 +10,8 @@ class Usuario {
         this.user = readLine().toString()
         print("Ingrese su NIP \n")
         this.nip = readLine()!!.toInt()
+        print("ingrese la cantidad a depositar")
+        this.saldo = readLine()!!.toInt()
     }
 
 }
